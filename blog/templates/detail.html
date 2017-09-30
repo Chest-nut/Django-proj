@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>详情</title>
+</head>
+<body>
+<h2>{{ blog.title }}</h2>
+<br>
+{{ blog.content }}
+<br>
+<br>
+<a href="{% url 'edit_page' blog.id %}">修改</a>
+</body>
+</html>

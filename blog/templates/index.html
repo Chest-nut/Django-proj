@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>首页</title>
+</head>
+<body>
+<h1>Hello Blog!</h1>
+<h3><a href="{% url 'edit_page' 0 %}">发表新文章</a></h3>
+{% for blog in blogs %}
+    <a href="{% url 'detail_page' blog.id %}">{{ blog.title }}</a>
+    <br>
+{% endfor %}
+
+</body>
+</html>
