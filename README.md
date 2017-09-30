@@ -1,2 +1,3 @@
-# Django-proj
-Django项目
+# Django入门项目
+
+极简博客
